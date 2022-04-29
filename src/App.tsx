@@ -1,4 +1,4 @@
-import './dist/styles/styles.css'
+import './compiled/styles/styles.css'
 import ServerRail from './components/ServerRail/ServerRail'
 import CurrentServerRail from './components/CurrentServerRail/CurrentServerRail'
 import CurrentServerContainer from './components/CurrentServerContainer/CurrentServerContainer'
