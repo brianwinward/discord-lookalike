@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "homepage": "https://brianwinward.github.io/discord-lookalike",
   "scripts": {
-    "styles": "npx tailwindcss -i ./src/styles/input.css -o ./src/dist/styles/styles.css",
-    "watch": "npx tailwindcss -i ./src/styles/input.css -o ./src/dist/styles/styles.css --watch",
+    "styles": "npx tailwindcss -i ./src/styles/input.css -o ./src/compiled/styles/styles.css",
+    "watch": "npx tailwindcss -i ./src/styles/input.css -o ./src/compiled/styles/styles.css --watch",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
