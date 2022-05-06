@@ -3,7 +3,8 @@ import TextBar from '../TextBar/TextBar';
 import Message from '../Message/Message'
 
 interface MessageObject {
-    text: String
+    text: String,
+    date: Date
 }
 
 const ChatWindow: React.FC = () => {
@@ -17,12 +18,12 @@ const ChatWindow: React.FC = () => {
 
     const onSubmitMessage = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        setMessages([...messages, {text: typing}])
+        setMessages([...messages, {text: typing, date: new Date()}])
     }
 
     const renderMessages = () => {
-        return messages.map((message, index) => {
-            return <Message key={index} text={message.text} user='User' dateTime={new Date()} />
+        return messages.map(({text, date}, index) => {
+            return <Message key={index} text={text} user='User' dateTime={date} />
         })
     }
 
