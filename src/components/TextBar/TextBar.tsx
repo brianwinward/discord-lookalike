@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { ChangeEventHandler, FormEventHandler } from 'react';
 
 interface Props {
-    onMessageChange: Function,
-    onSubmitMessage: Function
+    onMessageChange: ChangeEventHandler,
+    onSubmitMessage: FormEventHandler
 }
 
 function TextBar({ onMessageChange, onSubmitMessage }:Props) {

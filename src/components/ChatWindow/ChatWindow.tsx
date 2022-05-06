@@ -22,7 +22,7 @@ const ChatWindow: React.FC = () => {
 
     const renderMessages = () => {
         return messages.map((message, index) => {
-            return <Message key={index} text={message.text} />
+            return <Message key={index} text={message.text} user='User' dateTime={new Date()} />
         })
     }
 
